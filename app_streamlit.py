@@ -3,20 +3,20 @@ import joblib
 import pandas as pd
 
 
-modelo_path = './ML/modelo_entrenado.pkl'
-columnas_path = './ML/columnas_entrenamiento.pkl'
+modelo_path = './modelo_entrenado.pkl'
+columnas_path = './columnas_entrenamiento.pkl'
 # Cargar el modelo y las columnas de entrenamiento
 modelo = joblib.load(modelo_path)
 columnas_entrenamiento = joblib.load(columnas_path)
 
-modelo_path_city = './ML/modelo_entrenado_city.pkl'
-columnas_path_city = './ML/columnas_entrenamiento_city.pkl'
+modelo_path_city = './modelo_entrenado_city.pkl'
+columnas_path_city = './columnas_entrenamiento_city.pkl'
 # Cargar el modelo y las columnas de entrenamiento para ciudad
 modelo_city = joblib.load(modelo_path_city)
 columnas_entrenamiento_city = joblib.load(columnas_path_city)
 
 # Cargar las ciudades desde el archivo CSV
-ciudades_df = pd.read_csv('./ML/ciudades.csv')
+ciudades_df = pd.read_csv('./ciudades.csv')
 ciudades = ciudades_df['Ciudades'].tolist()
 
 # Crear la interfaz de Streamlit

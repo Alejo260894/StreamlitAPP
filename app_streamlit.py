@@ -13,7 +13,7 @@ columnas_entrenamiento = joblib.load(columnas_path)
 st.title("Predicción de Categorías de Restaurantes")
 
 # Pedir al usuario que ingrese los datos necesarios para la predicción
-state = st.selectbox("Seleccione el estado", ["New_York", "California", "Texas", "Florida"])
+state = st.selectbox("Seleccione el estado", ["California", "New_York", "Florida", "Pennsylvania", "Nevada"])
 stars = st.number_input("Ingrese la cantidad de estrellas", min_value=1.0, max_value=5.0, value=4.0, step=0.1)
 sentimiento = st.number_input("Ingrese el valor de sentimiento", min_value=-1.0, max_value=1.0, value=0.1, step=0.1)
 sentimiento_escalado = st.number_input("Ingrese el valor de sentimiento escalado", min_value=0.0, max_value=5.0, value=3.0, step=0.1)

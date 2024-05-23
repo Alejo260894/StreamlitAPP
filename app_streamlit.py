@@ -3,8 +3,8 @@ import joblib
 import pandas as pd
 
 
-modelo_path = './ML/modelo_entrenado.pkl'
-columnas_path = './ML/columnas_entrenamiento.pkl'
+modelo_path = 'modelo_entrenado.pkl'
+columnas_path = 'columnas_entrenamiento.pkl'
 # Cargar el modelo y las columnas de entrenamiento
 modelo = joblib.load(modelo_path)
 columnas_entrenamiento = joblib.load(columnas_path)

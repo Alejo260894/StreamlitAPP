@@ -52,7 +52,7 @@ if st.button("Predecir"):
 
     # Realizar la predicción
     predicted_category = modelo.predict(input_data)
-    st.write(f"La categoría recomendada para abrir un restaurante con {stars} estrellas en {state} es: {predicted_category[0]}")
+    st.write(f"La categoría recomendada para abrir invertir con {stars} estrellas en {state} es: {predicted_category[0]}")
 
 
 # Crear la interfaz de Streamlit para City
@@ -91,4 +91,4 @@ if st.button("Predecir Categoría por Ciudad"):
 
     # Realizar la predicción
     predicted_category_city = modelo_city.predict(input_data_city)
-    st.write(f"La categoría recomendada para abrir un restaurante con {stars_city} estrellas en {city} es: {predicted_category_city[0]}")
+    st.write(f"La categoría recomendada para abrir invertir con {stars_city} estrellas en {city} es: {predicted_category_city[0]}")
